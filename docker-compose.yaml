@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  hari:
+    image: hk804/hari:v2
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  krishna:
+    image: hk804/krishna:v2
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+  pydi:
+    image: hk804/pydi:v2
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
+
